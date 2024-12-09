@@ -66,25 +66,25 @@ bool Fixed::operator!=(const Fixed &arg) const
 
 
 // arithmetic operator overloads
-Fixed Fixed::operator+(const Fixed &arg)
+Fixed Fixed::operator+(const Fixed &arg) const
 {
     Fixed   sum = Fixed(toFloat() + arg.toFloat());
     return (sum);
 }
 
-Fixed Fixed::operator-(const Fixed &arg)
+Fixed Fixed::operator-(const Fixed &arg) const
 {
     Fixed	diff = Fixed(toFloat() - arg.toFloat());
     return (diff);
 }
 
-Fixed Fixed::operator*(const Fixed &arg)
+Fixed Fixed::operator*(const Fixed &arg) const
 {
     Fixed	prod = Fixed(toFloat() * arg.toFloat());
     return (prod);
 }
 
-Fixed Fixed::operator/(const Fixed &arg)
+Fixed Fixed::operator/(const Fixed &arg) const
 {
 	if (arg.toFloat() == 0)
 		std::cout << "Division by 0" << std::endl, exit(EXIT_FAILURE);
