@@ -13,6 +13,7 @@ class Fixed
 		Fixed(const Fixed &arg);
 		Fixed(const int i);
 		Fixed(const float f);
+		~Fixed(void);
 
 		// copy assignment operator overload
 		Fixed& operator=(const Fixed &arg);

@@ -19,6 +19,10 @@ Fixed::Fixed(const float f)
     _n = roundf(f * (1 << _n_bits));
 }
 
+Fixed::~Fixed(void)
+{
+}
+
 
 // copy assignment operator overload
 Fixed& Fixed::operator=(const Fixed &arg)
