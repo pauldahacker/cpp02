@@ -27,10 +27,10 @@ class Fixed
 		bool operator!=(const Fixed &arg) const;
 
 		// arithmetic operator overloads
-		Fixed operator+(const Fixed &arg);
-		Fixed operator-(const Fixed &arg);
-		Fixed operator*(const Fixed &arg);
-		Fixed operator/(const Fixed &arg);
+		Fixed operator+(const Fixed &arg) const;
+		Fixed operator-(const Fixed &arg) const;
+		Fixed operator*(const Fixed &arg) const;
+		Fixed operator/(const Fixed &arg) const;
 
 		// increment/decrement operator overloads
 		Fixed operator++(void);
